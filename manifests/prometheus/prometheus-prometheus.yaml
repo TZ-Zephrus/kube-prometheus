@@ -10,6 +10,8 @@ metadata:
   name: k8s
   namespace: monitoring
 spec:
+  imagePullSecrets:
+    - name: my-registry-secret
   alerting:
     alertmanagers:
     - apiVersion: v2
@@ -18,7 +20,7 @@ spec:
       port: web
   enableFeatures: []
   externalLabels: {}
-  image: quay.io/prometheus/prometheus:v2.41.0
+  image: registry.cn-heyuan.aliyuncs.com/wtzimages/prometheus:v2.41.0
   nodeSelector:
     kubernetes.io/os: linux
   podMetadata:

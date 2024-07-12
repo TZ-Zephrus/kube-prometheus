@@ -27,10 +27,12 @@ spec:
         app.kubernetes.io/part-of: kube-prometheus
         app.kubernetes.io/version: 9.3.16
     spec:
+      imagePullSecrets:
+      - name: my-registry-secret
       automountServiceAccountToken: false
       containers:
       - env: []
-        image: grafana/grafana:9.3.16
+        image: registry.cn-heyuan.aliyuncs.com/wtzimages/grafana:9.3.16
         name: grafana
         ports:
         - containerPort: 3000

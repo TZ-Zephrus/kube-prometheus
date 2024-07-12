@@ -10,7 +10,9 @@ metadata:
   name: main
   namespace: monitoring
 spec:
-  image: quay.io/prometheus/alertmanager:v0.25.0
+  imagePullSecrets:
+      - name: my-registry-secret
+  image: registry.cn-heyuan.aliyuncs.com/wtzimages/alertmanager:v0.25.0
   nodeSelector:
     kubernetes.io/os: linux
   podMetadata:
