@@ -7,7 +7,7 @@ require (
 	github.com/brancz/gojsontoyaml v0.0.0-20200602132005-3697ded27e8c
 	github.com/bwplotka/mdox v0.9.1-0.20220718065926-6a6aac7d5d30
 	github.com/google/go-jsonnet v0.19.1
-	github.com/jsonnet-bundler/jsonnet-bundler v0.5.1
+	github.com/jsonnet-bundler/jsonnet-bundler v0.6.0
 	github.com/yannh/kubeconform v0.5.0
 	sigs.k8s.io/yaml v1.3.0 // indirect
 )
@@ -55,6 +55,7 @@ require (
 	github.com/docker/go-units v0.4.0 // indirect
 	github.com/efficientgo/tools/core v0.0.0-20210609125236-d73259166f20 // indirect
 	github.com/efficientgo/tools/extkingpin v0.0.0-20210609125236-d73259166f20 // indirect
+	github.com/elliotchance/orderedmap/v2 v2.2.0 // indirect
 	github.com/enescakir/emoji v1.0.0 // indirect
 	github.com/fatih/color v1.13.0 // indirect
 	github.com/felixge/fgprof v0.9.1 // indirect
